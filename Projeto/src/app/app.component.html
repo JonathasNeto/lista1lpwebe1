@@ -1,0 +1,27 @@
+<table align="center" class="tabela">
+<tr><h1 align='center' class="h1">Cadastro de Pessoas </h1></tr>
+<tr><h2 align='center'>exercicio 1</h2></tr>
+
+  <td>
+    <tr >
+        <td>
+        <form ngForm name="cadastro" class="form">
+          <tr class="im">Nome: <input type="text" name="titulo" [(ngModel)]="titulo" class="nome">
+          
+          <button (click)="adicionar()" class="butoon">   Adicionar</button>
+        </form>
+        </td>
+    </tr>
+  <ul>
+
+      <tr ><h2>Pessoas Cadastradas</h2></tr>
+      <td>        
+      
+      <tr *ngFor=" let pessoa of pessoas ">
+       <td> nome: {{pessoa.nome}}</td> 
+      </tr>
+     
+    </td>
+  </ul>
+</td>
+</table>
